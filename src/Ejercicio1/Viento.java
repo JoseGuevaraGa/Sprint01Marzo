@@ -1,18 +1,12 @@
 package Ejercicio1;
 
-public class Viento {
-    String nombreInstrumento;
-    int precioInstrumento;
-
-    static String tocarInstrumento="Esta sonando un instrumento de viento";
-
-    public Viento(String nombreInstrumento, int precioInstrumento) {
-        this.nombreInstrumento = nombreInstrumento;
-        this.precioInstrumento = precioInstrumento;
+public class Viento extends Instrumento{
+    public Viento(){
     }
 
-    public void muestraTocar() {
-
-        System.out.println(tocarInstrumento);
+    @Override
+    public void tocar() {
+        System.out.println("Esta sonando un instrumento de viento");
     }
+
 }

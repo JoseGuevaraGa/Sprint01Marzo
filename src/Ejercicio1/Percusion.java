@@ -1,19 +1,12 @@
 package Ejercicio1;
 
-public class Percusion {
-    String nombreInstrumento;
+public class Percusion extends Instrumento{
+    public Percusion(){
 
-    int precioInstrumento;
-
-    static String tocarInstrumento="Esta sonando un instrumento de percusion";
-
-    public Percusion(String nombreInstrumento, int precioInstrumento) {
-        this.nombreInstrumento = nombreInstrumento;
-        this.precioInstrumento = precioInstrumento;
     }
 
-    public void muestraTocar() {
-
-        System.out.println(tocarInstrumento);
+    @Override
+    public void tocar() {
+        System.out.println("Esta sonando un instrumento de percusion");
     }
 }
